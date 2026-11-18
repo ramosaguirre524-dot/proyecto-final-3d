@@ -93,7 +93,7 @@ app.get('/', (req, res) => {
             <h1>Mensajes Recibidos (${mensajesRecibidos.length})</h1>
           </div>
           <div class="controles">
-            <span class="temporizador">Actualización en: <strong id="cuenta">60s</strong></span>
+            <span class="temporizador">Actualización en: <strong id="cuenta">10s</strong></span>
             <button class="btn-gold" onclick="location.reload()">Actualizar ahora</button>
           </div>
         </header>
@@ -125,7 +125,7 @@ app.get('/', (req, res) => {
       </div>
 
       <script>
-        let segundos = 60;
+        let segundos = 10;
         const contador = document.getElementById('cuenta');
         setInterval(() => {
           segundos--;
